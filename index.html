@@ -14,18 +14,21 @@
         <img src="./images/logo.png" alt="" class="logo-img" />
         <br />
         <button id="start-button">Start Game</button>
-        <p>Use the left and right arrow to control the car!</p>
+        <p>
+          Use the left and right arrows to control the direction of the car.
+        </p>
+        <p>Use the up and down arrows to accelerate and brake.</p>
         <img src="./images/arrows.png" alt="" class="arrows-img" />
       </div>
 
       <div id="game-container">
-        <div>
-          <h2>Stats</h2>
-          <p>Score: <span id="score">0</span></p>
-          <p>Lives: <span id="lives">3</span></p>
-        </div>
         <!-- #game-screen is initially hidden using CSS style display: none -->
-        <div id="game-screen"></div>
+        <div id="game-screen">
+          <div id="game-scoreboard">
+            <div id="lives-counter"></div>
+            <div id="score-counter"></div>
+          </div>
+        </div>
       </div>
 
       <!-- #game-end is initially hidden using CSS style display: none -->
@@ -36,8 +39,11 @@
         <button id="restart-button">Restart</button>
       </div>
     </main>
-
-    <script type="text/javascript" src="js/game.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="./js/scoreboard.js"></script>
+    <script src="./js/component.js"></script>
+    <script src="./js/obstacle.js"></script>
+    <script src="./js/player.js"></script>
+    <script src="./js/game.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
